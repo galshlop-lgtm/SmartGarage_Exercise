@@ -1,7 +1,7 @@
 ﻿namespace SmartGarage_Exercise
 {
     internal class Program
-    {
+    {//
         static void Main(string[] args)
         {
 			Console.WriteLine("--- Welcome to Smart Garage (v1.0 - Messy) ---");
