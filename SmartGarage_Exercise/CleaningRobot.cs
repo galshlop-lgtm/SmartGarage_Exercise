@@ -10,7 +10,7 @@ namespace SmartGarage_Exercise
 	/// <summary>
 	/// מייצג רובוט ניקוי חשמלי.
 	/// </summary>
-	public class CleaningRobot
+	public class CleaningRobot : IMoveble ,IChargeable
 	{
 		/// <summary>
 		/// המספר הסידורי של הרובוט.
@@ -80,5 +80,12 @@ namespace SmartGarage_Exercise
 		{
 			Console.WriteLine($"Robot {SerialNumber} spins right.");
 		}
+        /// <summary>
+        /// מפעיל את הרובוט לנסיעה.
+        /// </summary>
+        public void Drive()
+        {
+            Console.WriteLine($"Robot {SerialNumber} is driving.");
+        }
 	}
 }
